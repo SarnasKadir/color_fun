@@ -1,0 +1,872 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <style>
+        .articleHolder{min-height:500px;}
+        .fun1 p, .fun2 p, .fun3 p, .fun4 p, .fun5 p {padding:10px; display:block; width:100%;}
+        
+        .buttonHolder{ }
+        .buttonHolder button{
+         padding:10px;
+         border:1px solid silver;
+         background-color:white;
+         cursor:pointer;
+         
+        }
+        
+        .buttonHolder button:hover{border-color:blue;}
+        
+        
+        .fun10 {}
+        .fun10 .boxes2{
+        float:left; 
+        width:100px;
+        height:100px;
+        border-top:20px solid transparent;
+        border-right:20px solid transparent;
+        border-bottom:20px solid transparent;
+        border-left:20px solid transparent;
+        border-radius:50%;
+         
+        } 
+        
+         
+        
+        .fun10 #countHolder2 {
+        width:20px;
+        height:20px;
+        text-align:center;
+        line-height:100px;
+        float:left;
+        position:relative; 
+        border-radius:50%;
+        overflow:hidden;
+        padding:60px;
+        border:40px solid transparent;
+        } 
+        
+        .fun10 #countHolder2 span {bottom:0; line-height:50px; font-weight:bold; font-size:20px;} 
+        .fun10 #countHolder2 #count2 {top:0;  line-height:70px; font-weight:bold; font-size:20px;} 
+        
+        .fun10 #countHolder2 span, #count2 {
+        width:100%;
+        height:50%;
+        text-align:center;
+        float:left; 
+        position:absolute;
+        left:0; 
+        } 
+         
+        .fun10 {display:none;}
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <!-- FUN 9 -->
+        .fun9{}
+        
+        .fun9 .box .boxes{
+        width:70px;
+        height:70px;
+        text-align:center;
+        line-height:70px;
+        float:left;
+        padding:10px;
+        font-size:14px;
+        
+        } 
+        
+        
+        .fun9{ display:none;}  
+        
+        
+        <!-- FUN 8 -->
+        .fun8{}
+        
+        .fun8 .box .boxes{
+        width:50px;
+        height:50px;
+        text-align:center;
+        line-height:50px;
+        float:left;
+        padding:10px;
+        font-size:14px;
+        border-radius:50%;  
+        border:1px solid silver;
+        } 
+        .fun8{ display:none;} 
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <!-- FUN 7 -->
+        .fun7{}
+        .fun7 .box .boxes{
+         width:70px;
+        height:70px;
+        text-align:center;
+        line-height:50px;
+        float:left;
+        padding:10px;
+        font-size:14px;
+        border-radius:50%;  
+        border:1px solid silver;
+        } 
+          
+        .fun7{ display:none;}  
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <!-- FUN 6 -->
+        .fun6{}
+        .fun6 .box .boxes {  
+        float:left; 
+        width:1px;
+        height:1px;
+        border-top:50px solid silver;
+        border-right:50px solid transparent;
+        border-bottom:50px solid silver;
+        border-left:50px solid transparent;
+         
+        
+        	transition:all 4s;
+        	-webkit-animation: vertical 4s linear infinite;
+        	-moz-animation: vertical 4s linear infinite;
+        	-ms-animation: vertical 4s linear infinite;
+        	-o-animation: vertical 4s linear infinite;
+        	animation: vertical 4s linear infinite; 
+        } 
+        
+        @keyframes vertical {
+        	to{-ms-transform:rotate(0deg);
+        	-moz-transform:rotate(0deg);
+        	-webkit-transform:rotate(0deg);
+        	-o-transform:rotate(0deg);
+        	transform:rotate(0deg);}
+        from {-ms-transform:rotate(360deg)
+        	;-moz-transform:rotate(360deg);
+        	-webkit-transform:rotate(360deg);
+        	-o-transform:rotate(360deg);
+        	transform:rotate(360deg);}
+        }
+         
+        @-webkit-keyframes vertical {
+        	to{-ms-transform:rotate(0deg);
+        	-moz-transform:rotate(0deg);
+        	-webkit-transform:rotate(0deg);
+        	-o-transform:rotate(0deg);
+        	transform:rotate(0deg);}
+        from {-ms-transform:rotate(360deg)
+        	;-moz-transform:rotate(360deg);
+        	-webkit-transform:rotate(360deg);
+        	-o-transform:rotate(360deg);
+        	transform:rotate(360deg);}
+        } 
+        
+         
+        .fun6{padding:0 20px; display:none;}  
+        
+        
+        <!-- FUN 5 -->
+        .fun5 { }
+        .fun5 .box .boxes { 
+        float:left; 
+        border-top:50px solid silver;
+        border-right:50px solid silver;
+        border-bottom:50px solid silver;
+        border-left:50px solid silver;
+        border-radius:50%;
+        
+        	transition:all 4s;
+        	-webkit-animation: vertical 4s linear infinite;
+        	-moz-animation: vertical 4s linear infinite;
+        	-ms-animation: vertical 4s linear infinite;
+        	-o-animation: vertical 4s linear infinite;
+        	animation: vertical 4s linear infinite; 
+        } 
+        
+        @keyframes vertical {
+        	to{-ms-transform:rotate(0deg);
+        	-moz-transform:rotate(0deg);
+        	-webkit-transform:rotate(0deg);
+        	-o-transform:rotate(0deg);
+        	transform:rotate(0deg);}
+        from {-ms-transform:rotate(360deg)
+        	;-moz-transform:rotate(360deg);
+        	-webkit-transform:rotate(360deg);
+        	-o-transform:rotate(360deg);
+        	transform:rotate(360deg);}
+        }
+         
+        @-webkit-keyframes vertical {
+        	to{-ms-transform:rotate(0deg);
+        	-moz-transform:rotate(0deg);
+        	-webkit-transform:rotate(0deg);
+        	-o-transform:rotate(0deg);
+        	transform:rotate(0deg);}
+        from {-ms-transform:rotate(360deg)
+        	;-moz-transform:rotate(360deg);
+        	-webkit-transform:rotate(360deg);
+        	-o-transform:rotate(360deg);
+        	transform:rotate(360deg);}
+        } 
+        
+        .fun5{display:none;} 
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <!-- FUN 4 -->
+        .fun4 { }
+        .fun4 .boxes{
+        width:70px;
+        height:70px;
+        line-height:80px;
+        text-align:center;
+        float:left;
+        padding:10px;
+        font-size:14px;
+        border:1px solid silver;
+        font-weight:bold;
+        } 
+        .fun4{display:none;} 
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <!-- FUN 3 -->
+        .fun3 { }
+        .fun3 .boxes{
+        width:80px;
+        height:80px;
+        float:left;
+        border:1px solid silver;
+        } 
+        .fun3{display:none;} 
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <!-- FUN 2 -->
+        .fun2 { }
+        .fun2 .box .boxes { 
+        float:left; 
+        border-top:50px solid silver;
+        border-right:50px solid silver;
+        border-bottom:50px solid silver;
+        border-left:50px solid silver; 
+        } 
+        .fun2{display:none;}
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <!-- FUN 1 -->
+        .fun1 { }
+        .fun1 .boxes{
+        width:80px;
+        height:80px;
+        text-align:center;
+        line-height:60px;
+        float:left;
+        padding:10px;
+        font-size:14px;
+        border-radius:50%;
+        border:1px solid silver; }
+        .fun1 #countHolder {
+        width:20px;
+        height:20px;
+        text-align:center;
+        line-height:100px;
+        float:left;
+        position:relative; 
+        border-radius:50%;
+        overflow:hidden;
+        padding:50px;
+        border:30px solid transparent;} 
+        .fun1 #countHolder span {bottom:0; line-height:40px;} 
+        .fun1 #countHolder #count {top:0; line-height:60px;} 
+        .fun1 #countHolder span, #count {
+        width:100%;
+        height:50%;
+        text-align:center;
+        float:left; 
+        position:absolute;
+        left:0;} 
+        .fun1{display:none;}
+    </style>
+    <script>
+        $(document).ready(function(){
+        
+        
+        
+        $("#fun10").click(function(){ 
+        $(".buttonHolder button").css("background-color", "white");
+        $(this).css("background-color", "khaki");
+        $(".fun10").show(); 
+        $(".fun1,.fun2,.fun3, .fun4 , .fun5, .fun6, .fun7,.fun8,.fun9").hide(); 
+        $(".box2").empty().append();  
+        
+         
+        var count= 1; 
+        var theInterval = setInterval(function(){ 
+        if(count == 100)
+        clearInterval(theInterval);
+        
+        var bgcolor = Math.floor(Math.random() * 16777215).toString(16); 
+        var txcolor = Math.floor(Math.random() * 16777215).toString(16);
+        var bgcolor2 = Math.floor(Math.random() * 16777215).toString(16);
+        var bgcolor3 = Math.floor(Math.random() * 16777215).toString(16);
+        var bgcolor4 = Math.floor(Math.random() * 16777215).toString(16);
+        var bgcolor5 = Math.floor(Math.random() * 16777215).toString(16);
+        var bgcolor6 = Math.floor(Math.random() * 16777215).toString(16);
+        
+        $(".box2").append("<div class='boxes2' style='border-bottom-color:#"+bgcolor5+";border-top-color:#"+bgcolor4+";border-right-color:#"+bgcolor3+";border-left-color:#"+bgcolor2+"; background-color:#"+bgcolor+";'> </div>");
+        
+        
+        $('.fun10 #count2').css("background-color", "#"+bgcolor+"");
+        $('.fun10 #countHolder2 span').css("background-color", "#"+bgcolor2+"");
+        $('.fun10 #countHolder2').css("border-top-color", "#"+bgcolor3+"");
+        $('.fun10 #countHolder2').css("border-right-color", "#"+bgcolor4+"");
+        $('.fun10 #countHolder2').css("border-bottom-color", "#"+bgcolor5+"");
+        $('.fun10 #countHolder2').css("border-left-color", "#"+bgcolor6+""); 
+         
+        $(".fun10 #count2").html(count); 
+        $(".fun10 #countHolder2 span").empty().append("Colours"); 
+         //var drop = new Audio("2.mp3"); 
+         //drop.play();  
+         
+         
+        count++; 
+        },10);
+        });
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <!-- FUN 9 -->
+        $("#fun9").click(function(){
+        $(".buttonHolder button").css("background-color", "white");
+        $(this).css("background-color", "khaki");
+        $(".fun9").show(); 
+        $(".fun1,.fun2,.fun3, .fun4 , .fun5, .fun6, .fun7,.fun8,.fun10").hide(); 
+        $(".box").empty().append(); 
+        var count= 1; 
+        var theInterval = setInterval(function(){ 
+        if(count == 100)
+        clearInterval(theInterval);
+        
+        var bgcolor = Math.floor(Math.random() * 16777215).toString(16); 
+        var txcolor = Math.floor(Math.random() * 16777215).toString(16);
+        
+        
+        $(".fun9 .box").append("<div class='boxes' style='background-color:#"+bgcolor+"; color:#"+txcolor+";'> #"+bgcolor+" </div>");  
+        count++;
+        },1);
+        
+        }); 
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <!-- FUN 8 -->
+        $("#fun8").click(function(){
+        $(".buttonHolder button").css("background-color", "white");
+        $(this).css("background-color", "khaki");
+        $(".fun8").show(); 
+        $(".fun1,.fun2,.fun3, .fun4 , .fun5, .fun6, .fun7,.fun9,.fun10").hide(); 
+        $(".box").empty().append(); 
+         
+        
+        var count= 1; 
+        var theInterval = setInterval(function(){ 
+        if(count == 100)
+        clearInterval(theInterval);
+        var randomcolor = Math.floor(Math.random() * 16777215).toString(16); 
+        var size = Math.floor(Math.random() * 100);
+        
+        
+        $(".fun8 .box").append("<div class='boxes' style='width:"+size+"px; height:"+size+"px; background-color:#"+randomcolor+";'> </div>");  
+        count++;
+        },1);}); 
+        
+        
+        
+         
+        
+        <!-- FUN 7 -->
+        $("#fun7").click(function(){
+        $(".buttonHolder button").css("background-color", "white");
+        $(this).css("background-color", "khaki");
+        $(".fun7").show(); 
+        $(".fun1,.fun2,.fun3, .fun4 , .fun5, .fun6,.fun8,.fun9,.fun10").hide(); 
+        $(".box").empty().append(); 
+        
+        var count= 1; 
+        var theInterval = setInterval(function(){ 
+        if(count == 100)
+        clearInterval(theInterval);
+        var bgColorNR = Math.floor(Math.random() * 16777215).toString(16); 
+        var widthNR = Math.floor(Math.random() * 100);
+        var heightNR = Math.floor(Math.random() * 50);
+        
+        var width = "width:"+widthNR+"px;";
+        var height = "height:"+heightNR+"px;";
+        var bgColor = "background-color:#"+bgColorNR+";";
+        
+        var boxes = "<div class='boxes' style='"+width+" "+height+" "+bgColor+" '> </div>"
+        
+        $(".fun7 .box").append(boxes); 
+         
+        count++;
+        },1);});
+         
+        $('.box').on('click', '.boxes', function(e) {
+            e.preventDefault();
+            $(this).remove();
+        });
+        
+        
+        
+        
+        
+        
+        
+        
+        <!-- FUN 6 -->
+        $("#fun6").click(function(){ 
+        $(".buttonHolder button").css("background-color", "white");
+        $(this).css("background-color", "khaki");
+        $(".fun6").show(); 
+        $(".fun1,.fun2,.fun3, .fun4 , .fun5,.fun7,.fun8,.fun9,.fun10").hide(); 
+        $(".box").empty().append();   
+         
+        var count= 1; 
+        var theInterval = setInterval(function(){ 
+        if(count == 100)
+        clearInterval(theInterval);
+        var borderTop = Math.floor(Math.random() * 16777215).toString(16); 
+        var borderRight = Math.floor(Math.random() * 16777215).toString(16);
+        var borderBottom = Math.floor(Math.random() * 16777215).toString(16);
+        var borderLeft = Math.floor(Math.random() * 16777215).toString(16);
+        $(".fun6 .box").append("<div class='boxes' style='border-top-color: #"+borderTop+";   border-bottom-color: #"+borderBottom+";  '>  </div>"); 
+        count++; 
+        },10);});
+        
+        
+        
+        <!-- FUN 5 -->
+        $("#fun5").click(function(){ 
+        $(".buttonHolder button").css("background-color", "white");
+        $(this).css("background-color", "khaki");
+        $(".fun5").show(); 
+        $(".fun1,.fun2,.fun3, .fun4, .fun6,.fun7,.fun8,.fun9,.fun10").hide(); 
+        $(".box").empty().append();  
+         
+        var count= 1; 
+        var theInterval = setInterval(function(){ 
+        if(count == 100)
+        clearInterval(theInterval);
+        var borderTop = Math.floor(Math.random() * 16777215).toString(16); 
+        var borderRight = Math.floor(Math.random() * 16777215).toString(16);
+        var borderBottom = Math.floor(Math.random() * 16777215).toString(16);
+        var borderLeft = Math.floor(Math.random() * 16777215).toString(16);
+        $(".fun5 .box").append("<div class='boxes' style='border-top-color: #"+borderTop+"; border-right-color: #"+borderRight+"; border-bottom-color: #"+borderBottom+"; border-left-color: #"+borderLeft+";'>  </div>"); 
+        count++; 
+        },10);});
+        
+         
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <!-- FUN 4 -->
+        $("#fun4").click(function(){
+        $(".buttonHolder button").css("background-color", "white");
+        $(this).css("background-color", "khaki");
+        $(".fun4").show(); 
+        $(".fun1,.fun2,.fun3,.fun5, .fun6,.fun7,.fun8,.fun9,.fun10").hide(); 
+        $(".box").empty().append();
+        var count= 1; 
+        var theInterval = setInterval(function(){ 
+        if(count == 200)
+        clearInterval(theInterval);
+        
+        var bgcolor = Math.floor(Math.random() * 16777215).toString(16); 
+        var txcolor = Math.floor(Math.random() * 16777215).toString(16);
+        
+        var borderRD = Math.floor(Math.random() * 100);
+        
+        
+        $(".fun4 .box").append("<div class='boxes' style='border-top-left-radius:"+borderRD+"%; background-color:#"+bgcolor+"; color:#"+txcolor+";'> "+borderRD+"%</div>");  
+        count++;
+        },1);
+        
+        });
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <!-- FUN 3 -->
+        $("#fun3").click(function(){
+        $(".buttonHolder button").css("background-color", "white");
+        $(this).css("background-color", "khaki");
+        $(".fun3").show(); 
+        $(".fun1,.fun2 ,.fun4,.fun5, .fun6,.fun7,.fun8,.fun9,.fun10").hide(); 
+        $(".box").empty().append();
+        var count= 1; 
+        var theInterval = setInterval(function(){ 
+        if(count == 200)
+        clearInterval(theInterval);
+        
+        var bgcolor = Math.floor(Math.random() * 16777215).toString(16); 
+        var txcolor = Math.floor(Math.random() * 16777215).toString(16);
+        
+        var border1 = Math.floor(Math.random() * 300);
+        var border2 = Math.floor(Math.random() * 300);
+        var border3 = Math.floor(Math.random() * 300);
+        var border4 = Math.floor(Math.random() * 300);
+        
+        
+        $(".fun3 .box").append("<div class='boxes' style='border-top-right-radius:"+border4+"%;border-top-left-radius:"+border3+"%;border-bottom-left-radius:"+border2+"%;border-bottom-right-radius:"+border1+"%; background-color:#"+bgcolor+"; color:#"+txcolor+";'> </div>");  
+        count++;
+        },1);
+        
+        }); 
+        
+        
+        
+        <!-- FUN 3 ends  -->
+        
+        
+        
+        
+        
+        <!-- FUN 2 -->
+        $("#fun2").click(function(){ 
+        $(".buttonHolder button").css("background-color", "white");
+        $(this).css("background-color", "khaki");
+        $(".fun2").show(); 
+        $(".fun1,.fun3,.fun4,.fun5, .fun6,.fun7,.fun8,.fun9,.fun10").hide(); 
+        $(".fun2 .box").empty().append();
+        var count= 1; 
+        var theInterval = setInterval(function(){ 
+        if(count == 100)
+        clearInterval(theInterval);
+        var borderTop = Math.floor(Math.random() * 16777215).toString(16); 
+        var borderRight = Math.floor(Math.random() * 16777215).toString(16);
+        var borderBottom = Math.floor(Math.random() * 16777215).toString(16);
+        var borderLeft = Math.floor(Math.random() * 16777215).toString(16);
+        $(".fun2 .box").append("<div class='boxes' style='border-top-color: #"+borderTop+"; border-right-color: #"+borderRight+"; border-bottom-color: #"+borderBottom+"; border-left-color: #"+borderLeft+";'>  </div>"); 
+        count++; 
+        },10);});
+        <!-- FUN 2 ends  -->
+        
+        
+        
+        <!-- FUN 1 -->
+         
+        $("#fun1").click(function(){
+        $(".buttonHolder button").css("background-color", "white");
+        $(this).css("background-color", "khaki");
+        $(".fun1").show();
+        $(".fun2, .fun3, .fun4,.fun5, .fun6,.fun7,.fun8,.fun9,.fun10").hide();
+        $(".fun1 #countHolder span").empty().append("Colours");
+        $(".fun1 .box").empty().append();
+        var count= 1; 
+        var theInterval = setInterval(function(){ 
+        if(count == 100)clearInterval(theInterval);
+        var bgcolor = Math.floor(Math.random() * 16777215).toString(16); 
+        var txcolor = Math.floor(Math.random() * 16777215).toString(16);
+        var bgcolor2 = Math.floor(Math.random() * 16777215).toString(16);
+        var bgcolor3 = Math.floor(Math.random() * 16777215).toString(16);
+        var bgcolor4 = Math.floor(Math.random() * 16777215).toString(16);
+        var bgcolor5 = Math.floor(Math.random() * 16777215).toString(16);
+        var bgcolor6 = Math.floor(Math.random() * 16777215).toString(16);
+        $(".fun1 .box").append("<div class='boxes' style='background-color:#"+bgcolor+"; color:#"+txcolor+";'> #"+bgcolor+" </div>"); 
+        $('.fun1 #count').css("background-color", "#"+bgcolor+""); 
+        $('.fun1 #countHolder span').css("background-color", "#"+bgcolor2+"");
+        $('.fun1 #countHolder').css("border-top-color", "#"+bgcolor3+"");
+        $('.fun1 #countHolder').css("border-right-color", "#"+bgcolor4+"");
+        $('.fun1 #countHolder').css("border-bottom-color", "#"+bgcolor5+"");
+        $('.fun1 #countHolder').css("border-left-color", "#"+bgcolor6+"");
+        $(".fun1 #count").html(count); 
+        count++;
+        
+        },20);}); 
+        
+        });
+    </script>
+
+
+
+
+
+
+</head>
+
+<body>
+
+
+
+
+    <div class="buttonHolder">
+        <button id="fun1">Start fun 1</button>
+        <button id="fun2">Start fun 2</button>
+        <button id="fun3">Start fun 3</button>
+        <button id="fun4">Start fun 4</button>
+        <button id="fun5">Start fun 5</button>
+        <button id="fun6">Start fun 6</button>
+        <button id="fun7">Start fun 7</button>
+        <button id="fun8">Start fun 8</button>
+        <button id="fun9">Start fun 9</button>
+        <button id="fun10">Start fun 10</button>
+    </div>
+
+
+
+
+
+    <!-- FUN 10 -->
+    <div class="fun10">
+        <p>100 colours, Fun 10</p>
+        <div id="countHolder2">
+            <div id="count2"> </div>
+            <span> </span>
+        </div>
+
+        <div class="box2"></div>
+    </div>
+    <!-- Fun ends  -->
+
+
+
+
+
+
+
+
+
+
+
+    <!-- FUN 9 -->
+    <div class="fun9">
+        <p>100 colours, Fun 9</p>
+        <div class="box"></div>
+    </div>
+    <!-- fun 9 ends  -->
+
+
+
+    <!-- FUN 8 -->
+    <div class="fun8">
+        <p>100 colours, Fun 8</p>
+        <div class="box"></div>
+    </div>
+    <!-- fun 8 ends  -->
+
+
+
+
+
+    <!-- FUN 7 -->
+    <div class="fun7">
+        <p>100 colours, Fun 7</p>
+        <div class="box"></div>
+    </div>
+    <!-- fun 7 ends  -->
+
+
+
+
+    <!-- FUN 6 -->
+    <div class="fun6">
+        <p>100 colours, Fun 6</p>
+        <div class="box"></div>
+    </div>
+    <!-- fun 6 ends  -->
+
+
+
+
+
+
+    <!-- FUN 5 -->
+    <div class="fun5">
+        <p>100 colours, Fun 5</p>
+        <div class="box"></div>
+    </div>
+    <!-- fun 4 ends  -->
+
+
+
+
+
+    <!-- FUN 4 -->
+    <div class="fun4">
+        <p>100 colours, Fun 4</p>
+        <div class="box"></div>
+    </div>
+    <!-- fun 4 ends  -->
+
+
+
+
+
+
+    <!-- FUN 3 -->
+    <div class="fun3">
+        <p>100 colours, Fun 3</p>
+        <div class="box"></div>
+    </div>
+    <!-- fun 3 ends  -->
+
+
+
+    <!-- FUN 2 -->
+    <div class="fun2">
+        <p>100 colours, Fun 2</p>
+        <div class="box"></div>
+    </div>
+    <!-- fun 2 ends  -->
+
+
+
+
+
+
+
+
+    <!-- FUN 1 -->
+    <div class="fun1">
+
+        <p>100 colours, Fun 1</p>
+        <div id="countHolder">
+            <div id="count"> </div><span> </span></div>
+        <div class="box"></div>
+    </div>
+    <!-- fun 1 ends  -->
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
